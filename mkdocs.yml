@@ -1,0 +1,42 @@
+site_name: Test
+site_url: https://pampo80.github.io/Abhijit/
+
+theme:
+  name: material
+  features:
+    - navigation.collapse
+    - navigation.indexes
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+        
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: sk
+          name: Slovensky
+          build: true
+          nav_translations:
+            Home: Úvod
+            About: O projekte
+            Definition: Zadefinovanie
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Definition: definition.md
